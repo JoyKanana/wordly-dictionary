@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly | Your Personal Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Wordly<span>.</span></a>
+        <p class="tagline">A little more meaning ,every day</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="hero-text">Discover the power of words with Wordly, your personal dictionary and language
+                companion.
+            </p>
+            <h1>Find the words you've been looking for</h1>
+            <p>Discover new meanings, pronunciations, and usage examples.</p>
+            <form id="search-form">
+                <label for="word-input">Which word do you want to look up?</label>
+                <input type="text" id="word-input" placeholder="Try serendipity" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <p id="status-message" role="alert" aria-live="assertive"></p>
+    </main>
+    <section id="results-section" class="results" hidden>
+        <h2 id="result-word"></h2>
+        <p id="phonetic"></p>
+        <div id="meaning-container"></div>
+        <div id="details-container"></div>
+        <button type="button" id="audio-button" hidden>Play Pronunciation</button>
+        <button type="button" id="favorite-button" hidden>Add to favourites</button>
+    </section>
+
+    <section class="favorites-section">
+        <h2>Your Favorite Words</h2>
+        <p id="favorites-empty">Your collection of favorite words is waiting to be filled. Start exploring and add your
+            favorite words to create your personal dictionary!</p>
+        <ul id="favorite-list"></ul>
+    </section>
+    <footer>
+        <p>Wordly. Made for the love of words and the curious minds. &copy; 2026</p>
+    </footer>
+</body>
+
+</html>
